@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BB6B24;
+  padding-right: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  z-index: 100;
+  color: white;
+}
+#header-img {
+  height: 100%;
+  margin-right: auto;
+}
+#name {
+  position: absolute;
+  font-size: 2.35vw;
+}
+@media (max-width: 650px) {
+  #name {
+    font-size: 0;
+  }
+}
+#nav-bar {
+  margin-left: auto;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.625em 1em;
+}
+.nav-link:hover {
+    background-color: #BB7B24;
+}
+#shop-title {
+  margin-top: 60px;
+  text-align: center;
+}
+.product-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.variant-container {
+  border: solid black;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.5);
+  padding: 2rem;
+  width: 33%;
+  margin: 0.8em 1.5em;
+  position: relative;
+  padding-bottom: 7rem;
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+  .variant-container {
+    margin: 0.8em 0.50em;
+  }
+}
+.product-img {
+  width: 20vw;
+  margin: 1em auto;
+  height: 20vw;
+}
+.description {
+  display: block;
+  font-size: 1.2vw;
+  text-align: justify;
+}
+.add-cart {
+  width: 80%;
+  position: absolute;
+  bottom: 2vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1vw;
+  padding: 0.3vw;
+  border: solid 1px black;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance:none
+}
+.add-cart:hover {
+  background-color: #BB6B24;
+  color: white;
+}
+.variant-title {
+  font-size: 1.4vw;
+}
+#txt{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+  .product-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .variant-container {
+    width: 90%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .description {
+    font-size: 1em;
+  }
+  .add-cart {
+    font-size: 1em;
+  }
+  .variant-title {
+  font-size: 1.1em;
+}
+}
+#video {
+  display: block;
+  margin: 3em auto 2em auto;
+  width: 35vw;
+  height: 20vw;
+  max-width: 100%;
+ 
+}
+@media (max-width: 850px) {
+  #video {
+    width: 75%;
+    height: 40%;
+  }
+}
+.blog {
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+}
+@media (max-width: 850px) {
+  .blog {
+    width: 80%;
+  }
+}
+#form {
+  text-align: center;
+  margin: 2em auto 0 auto;
+  padding: 4em;
+  background-image: url(https://t3.ftcdn.net/jpg/01/04/41/92/240_F_104419238_TgN5UfvsW3zw0yccIsW1AMqum59GzULJ.jpg);
+}
+#subscribe {
+  display: inline-block;
+  background-color: white;
+  color: #93592d;
+  margin: auto;
+}
+#email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+#email {
+  border: solid 1px #93592d;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  padding: 3px 5px;
+  margin-right: 3px;
+}
+#submit {
+  font-size: 1em;
+  width: 5em;
+  border: solid 1px #93592d;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  -webkit-appearance:none;
+}
+</style>
+
+
+<main>
+
+
+
+<header id="header">
+        <img id="header-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsUnzkz--LbqG2nF6-_unkE1jiKENpgC0EEA&usqp=CAU"/>
+  <h1 id="name">Coffee Shop</h1>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#product">Product</a></li>
+                <li><a class="nav-link" href="#story">Story</a></li>
+              <li><a class="nav-link" href="#subscribe">Subcribe</a></li>
+            </ul>
+        </nav>
+    </header>
+      <h2 id="shop-title">Great Tasting Coffee Made Simple</h2><br>
+      <article>
+        <p class="blog">Coffee cultivation and trade began on the Arabian Peninsula.  By the 15th century, coffee was being grown in the Yemeni district of Arabia and by the 16th century it was known in Persia, Egypt, Syria, and Turkey.Coffee was not only enjoyed in homes, but also in the many public coffee houses — called qahveh khaneh — which began to appear in cities across the Near East. The popularity of the coffee houses was unequaled and people frequented them for all kinds of social activity. </p>
+    </article>
+    <br>
+    <section class="product-container" id="product">
+        <div class="variant-container">
+            <h3 class="variant-title">Variant 1-Arabica</h3>
+            <img class="product-img" src="https://www.creativefabrica.com/wp-content/uploads/2021/02/03/The-Coffee-Logo-is-Suitable-for-a-Coffee-Graphics-8306287-1.jpg" />
+            <p class="description">Known as one of the most popular and well known types of coffee bean, Arabica beans are the most commonly produced variety and are considered higher quality beans. These beans are grown at high altitudes and need to be in an area that has a steady rainfall and plenty of shade.</p>
+            <p id="txt"><srtong>1000/-</srtong></p>
+            <button class="select">Select</button>
+        </div>
+        <div class="variant-container">
+            <h3 class="variant-title">Variant 2-Robusta</h3>
+            <img class="product-img" src="https://www.creativefabrica.com/wp-content/uploads/2021/02/03/The-Coffee-Logo-is-Suitable-for-a-Coffee-Graphics-8306287-1.jpg" />
+            <p class="description">As the name hints, the Robusta bean is both hardy and is also immune to a variety of diseases too.The beans also have a smooth texture and it is often said that they even have a slight chocolate hint to them, which makes them ideal to have with milk and sugar (perhaps as an iced coffee).</p>
+            <p id="txt"><srtong>1500/-</srtong></p>
+            <button class="select">Select</button>
+        </div>
+        <div class="variant-container">
+            <h3 class="variant-title">Variant 3-Liberica</h3>
+            <img class="product-img" src="https://www.creativefabrica.com/wp-content/uploads/2021/02/03/The-Coffee-Logo-is-Suitable-for-a-Coffee-Graphics-8306287-1.jpg" />
+            <p class="description">One of the hardest types of coffee bean to come by is the Liberica bean. They are larger than the other beans and is the only one in the world that is known to have an irregular shape.Liberica beans are also unique in their aroma and some say that they are not only smoky, but they are fruity and floral too.</p>
+            <p id="txt"><srtong>2000/-</srtong></p>
+            <button class="select">Select</button>
+        </div>
+    </section>
+    <br>
+    <section id="story">
+        <div id= "txt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4zA_LuwsvEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>  
+    <section class="blog">
+        <ul>
+            <li>There are 100 species of coffee plants in existence today; however, only three species within the coffee belt make up all of the coffee beans produced worldwide. What’s more, more than 98 percent of the world’s coffee comes from just two of the three species.</li>
+            <li>The two main types of coffee beans are called arabica and robusta. The third variety, which makes up less than two percent of the global coffee production, is called liberica.</li>
+            <li>Until fairly recently, there were several other genera of coffee known as Coffea excelsa, Coffea dewevrei and Coffea dybowskii. In 2006, they were all reclassified as a variety of liberica, becoming known as Coffea liberica var. dewevrei.</li>
+            <li>The most well known of the three types of coffee beans is arabica. Arabica accounts for 60 – 70 percent of all the coffee produced worldwide.</li>
+        </ul> 
+    </section>  
+        <form id="form" action="email" method="get">
+            <h4 id="subscribe"><strong>Subscribe for more services and informations.</strong></h4>
+          <div id="email-form">
+                <input id="email" name="email" type="email" placeholder="Email Address" />
+                <input id="submit" type="submit" value="Subscribe" />
+          </div>
+        </form>
+    </main>
